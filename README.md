@@ -172,3 +172,6 @@ The above is only for development, for ordinary users, during runtime there is n
  original artist using my name or one of my pseudonyms and a link to my site. 
  With regard to the commercial use of incorporated images, permission and a 
  licence would need to be obtained from the original owner and creator, ie. me.
+
+ 
+<img width="800" height="491" alt="about" src="https://github.com/user-attachments/assets/3f543f52-928e-4e38-911a-9eaa185cafdb" />
