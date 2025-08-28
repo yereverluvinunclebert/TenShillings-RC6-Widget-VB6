@@ -471,7 +471,7 @@ Private Sub addImagesToImageList()
     
     Cairo.ImageList.AddImage "about", App.Path & "\Resources\images\about.png"
     Cairo.ImageList.AddImage "licence", App.Path & "\Resources\images\frame.png"
-    Cairo.ImageList.AddImage "help", App.Path & "\Resources\images\TenShillings.png"
+    Cairo.ImageList.AddImage "help", App.Path & "\Resources\images\tenShillingsHelp.png"
     Cairo.ImageList.AddImage "frmIcon", App.Path & "\Resources\images\Icon.png"
     
     'add Resources to the global ImageList
