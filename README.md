@@ -34,7 +34,8 @@ BUILD: The program runs without any Microsoft plugins.
 	Open File common dialog code without dependent OCX - http://forums.codeguru.com/member.php?92278-rxbagain  
 	VBAdvance  
  
- 
+ <img width="800" height="491" alt="tenShillingsHelp" src="https://github.com/user-attachments/assets/2e366c76-90c3-4992-9614-94b65eb559e2" />
+
  Tested on :
  
 	Windows 7 Professional 32bit on Intel    
