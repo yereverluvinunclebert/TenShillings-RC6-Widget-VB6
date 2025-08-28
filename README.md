@@ -9,3 +9,6 @@ You can add more logic as you require or replace the main image with your own.
 This is merely a template for other single-image VB6 / TwinBasic RC6 programs that I knocked up late at night whilst drinking gin and tonic.
 
 <img width="829" height="520" alt="TenShillings" src="https://github.com/user-attachments/assets/07f63cb6-c0fe-4f70-ad02-b57a9ab18b58" />
+
+If you want a template for a more complex program with multi-function clickable areas then try this program, 
+https://github.com/yereverluvinunclebert/Panzer-CPU-Gauge-VB6
