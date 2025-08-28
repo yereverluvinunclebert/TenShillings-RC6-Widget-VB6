@@ -385,6 +385,7 @@ W_MouseWheel_Error:
     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_MouseWheel of Class Module cwTenShillings"
     
 End Sub
+
 '---------------------------------------------------------------------------------------
 ' Procedure : W_MouseDown
 ' Author    :
@@ -411,7 +412,6 @@ W_MouseDown_Error:
     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_MouseDown of Class Module cwTenShillings"
 End Sub
 
-'
 
 
 '---------------------------------------------------------------------------------------
@@ -423,19 +423,16 @@ End Sub
 '
 Private Sub W_Paint(CC As RC6.cCairoContext, ByVal xAbs As Single, ByVal yAbs As Single, ByVal dx_Aligned As Single, ByVal dy_Aligned As Single, UserObj As Object)
         
-    ' Widgets are refreshed "from the ground up" in RC5 and not so in RC6
-    ' extra code NOT needed when using RC5 but now required in RC6 - starts
+    'RC6 whole widget .Refresh - RC5 Widgets are refreshed "from the ground up" but not so in RC6
     CC.Operator = CAIRO_OPERATOR_CLEAR
-    CC.Paint 'clear the whole background of this Widgets underlying Surface via Clear-Operator
+    CC.Paint ' clear the whole background of this Widgets underlying Surface via Clear-Operator
     CC.Operator = CAIRO_OPERATOR_OVER 'switch back to the default-Operator
-    ' extra code not needed when using RC5 but now required in RC6 - ends
     
     CC.TranslateDrawings 0, 0
     CC.ScaleDrawings mZoom, mZoom
     CC.Save
    
-    CC.RenderSurfaceContent "tenshillings", TenShillingsxo, TenShillingsyo, 829, 520, , mOpacity
-    
+    CC.RenderSurfaceContent "tenshillings", TenShillingsxo, TenShillingsyo, , , , mOpacity
     CC.Restore
     
     On Error GoTo 0
