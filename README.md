@@ -34,7 +34,8 @@ BUILD: The program runs without any Microsoft plugins.
 	Open File common dialog code without dependent OCX - http://forums.codeguru.com/member.php?92278-rxbagain  
 	VBAdvance  
  
- 
+ <img width="800" height="491" alt="tenShillingsHelp" src="https://github.com/user-attachments/assets/2e366c76-90c3-4992-9614-94b65eb559e2" />
+
  Tested on :
  
 	Windows 7 Professional 32bit on Intel    
@@ -94,7 +95,8 @@ BUILD: The program runs without any Microsoft plugins.
  During runtime on the users system, the RC6 components are dynamically 
  referenced using modRC6regfree.bas which is compiled into the binary.	
  
- 
+![prefsGeneral](https://github.com/user-attachments/assets/8a228ec6-89a9-459a-98bd-d1d17ce9728d)
+
  Requires a PzCPU Gauge folder in C:\Users\<user>\AppData\Roaming\ 
  eg: C:\Users\<user>\AppData\Roaming\PzCPU Gauge
  Requires a settings.ini file to exist in C:\Users\<user>\AppData\Roaming\PzCPU Gauge
@@ -120,7 +122,8 @@ at design time and the sliders will function as intended (if this ocx is
 not registered correctly then the relevant controls will be replaced by picture boxes).
 
 The above is only for development, for ordinary users, during runtime there is no need to do the above. The OCX will reside in the program folder. The program reference to this OCX is contained within the supplied resource file, Panzer CPU Gauge.RES. The reference to this file is already compiled into the binary. As long as the OCX is in the same folder as the binary the program will run without the need to register the OCX manually.
- 
+
+ <img width="451" height="406" alt="components" src="https://github.com/user-attachments/assets/0dad6c34-439c-4fbd-8522-23036269a89e" />
  
  * OLEGuids.tlb
  
@@ -159,6 +162,7 @@ The above is only for development, for ordinary users, during runtime there is n
 	OLE Automation  
 	vbRichClient6  
  
+ <img width="445" height="359" alt="projectReferences" src="https://github.com/user-attachments/assets/51a33785-2e3c-4b32-9fd0-6c4b0ebb8531" />
  
  LICENCE AGREEMENTS:
  
@@ -170,3 +174,6 @@ The above is only for development, for ordinary users, during runtime there is n
  original artist using my name or one of my pseudonyms and a link to my site. 
  With regard to the commercial use of incorporated images, permission and a 
  licence would need to be obtained from the original owner and creator, ie. me.
+
+ 
+<img width="800" height="491" alt="about" src="https://github.com/user-attachments/assets/3f543f52-928e-4e38-911a-9eaa185cafdb" />
