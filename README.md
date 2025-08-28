@@ -94,7 +94,8 @@ BUILD: The program runs without any Microsoft plugins.
  During runtime on the users system, the RC6 components are dynamically 
  referenced using modRC6regfree.bas which is compiled into the binary.	
  
- 
+![prefsGeneral](https://github.com/user-attachments/assets/8a228ec6-89a9-459a-98bd-d1d17ce9728d)
+
  Requires a PzCPU Gauge folder in C:\Users\<user>\AppData\Roaming\ 
  eg: C:\Users\<user>\AppData\Roaming\PzCPU Gauge
  Requires a settings.ini file to exist in C:\Users\<user>\AppData\Roaming\PzCPU Gauge
