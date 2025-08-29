@@ -11,7 +11,7 @@ This widget's UI functionality is 'simple' as it is merely a template for other 
 
 You can change a variety of characteristics with the preferences. It can be increased in size, opacity/transparency may be set as to the users discretion. The widget can also be made to hide for a pre-determined period.
 
-Right-click on the widget to display the function menu, mouse hover over the widget and press CTRL+mousewheel up/down to resize. It works well on Windows XP to Windows 11 as well as Linux and Mac os x with Wine.
+Right-click on the widget to display the function menu, mouse hover over the widget and press CTRL+mousewheel up/down to resize. It works well on Windows Vista+ to Windows 11 as well as Linux and Mac os x with Wine.
 
 This version was initially developed on Windows 7/10 using 32 bit VisualBasic 6 as a FOSS project creating a WoW64 widget for the desktop.
 
