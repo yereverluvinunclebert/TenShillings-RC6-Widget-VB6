@@ -413,7 +413,6 @@ W_MouseDown_Error:
 End Sub
 
 
-
 '---------------------------------------------------------------------------------------
 ' Procedure : W_Paint
 ' Author    : olaf schmidt

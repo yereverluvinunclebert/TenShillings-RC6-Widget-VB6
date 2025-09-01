@@ -174,10 +174,13 @@ Public Sub mainRoutine(ByVal restart As Boolean)
     
     ' make the busy sand timer invisible
     Call hideBusyTimer
+            
+    'subclassed the widget form to generate a balloon tooltip
+    Call SubclassForm(fMain.TenShillingsForm.hWnd, ObjPtr(fMain.TenShillingsForm))
     
     ' end the startup by un-setting the start global flag
     gblStartupFlg = False
-        
+
     ' RC message pump will auto-exit when Cairo Forms > 0 so we run it only when 0, this prevents message interruption
     ' when running twice on reload. Do not move this line.
     #If TWINBASIC Then
