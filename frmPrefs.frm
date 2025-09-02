@@ -75,7 +75,7 @@ Begin VB.Form widgetPrefs
          MultiLine       =   -1  'True
          ScrollBars      =   2  'Vertical
          TabIndex        =   101
-         Text            =   "frmPrefs.frx":25CA
+         Text            =   "frmPrefs.frx":0CCA
          Top             =   2205
          Width           =   7935
       End
@@ -438,7 +438,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgDevelopment 
          Height          =   600
          Left            =   150
-         Picture         =   "frmPrefs.frx":3581
+         Picture         =   "frmPrefs.frx":1C81
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -446,7 +446,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgDevelopmentClicked 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":3B39
+         Picture         =   "frmPrefs.frx":2239
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -486,7 +486,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgAbout 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":3EBF
+         Picture         =   "frmPrefs.frx":25BF
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -494,7 +494,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgAboutClicked 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":4447
+         Picture         =   "frmPrefs.frx":2B47
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -519,7 +519,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgConfig 
          Height          =   600
          Left            =   165
-         Picture         =   "frmPrefs.frx":4932
+         Picture         =   "frmPrefs.frx":3032
          Stretch         =   -1  'True
          Top             =   240
          Width           =   600
@@ -527,7 +527,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgConfigClicked 
          Height          =   600
          Left            =   165
-         Picture         =   "frmPrefs.frx":4F11
+         Picture         =   "frmPrefs.frx":3611
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -552,7 +552,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgPosition 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":5416
+         Picture         =   "frmPrefs.frx":3B16
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -560,7 +560,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgPositionClicked 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":59E7
+         Picture         =   "frmPrefs.frx":40E7
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -605,7 +605,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgSounds 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":5D85
+         Picture         =   "frmPrefs.frx":4485
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -613,7 +613,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgSoundsClicked 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":6344
+         Picture         =   "frmPrefs.frx":4A44
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -653,7 +653,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgWindow 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":6814
+         Picture         =   "frmPrefs.frx":4F14
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -661,7 +661,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgWindowClicked 
          Height          =   600
          Left            =   160
-         Picture         =   "frmPrefs.frx":6CDE
+         Picture         =   "frmPrefs.frx":53DE
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -685,7 +685,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgFonts 
          Height          =   600
          Left            =   180
-         Picture         =   "frmPrefs.frx":708A
+         Picture         =   "frmPrefs.frx":578A
          Stretch         =   -1  'True
          Top             =   195
          Width           =   600
@@ -693,7 +693,7 @@ Begin VB.Form widgetPrefs
       Begin VB.Image imgFontsClicked 
          Height          =   600
          Left            =   180
-         Picture         =   "frmPrefs.frx":75E0
+         Picture         =   "frmPrefs.frx":5CE0
          Stretch         =   -1  'True
          Top             =   195
          Width           =   600
@@ -709,7 +709,7 @@ Begin VB.Form widgetPrefs
          Appearance      =   0  'Flat
          Height          =   600
          Left            =   165
-         Picture         =   "frmPrefs.frx":7A79
+         Picture         =   "frmPrefs.frx":6179
          Stretch         =   -1  'True
          Top             =   225
          Width           =   600
@@ -866,7 +866,7 @@ Begin VB.Form widgetPrefs
             Width           =   3285
          End
          Begin VB.Label lblFontsTab 
-            Caption         =   $"frmPrefs.frx":90C3
+            Caption         =   $"frmPrefs.frx":77C3
             Height          =   1710
             Index           =   0
             Left            =   1680
@@ -1042,7 +1042,7 @@ Begin VB.Form widgetPrefs
                Width           =   720
             End
             Begin VB.Label lblWindowLevel 
-               Caption         =   $"frmPrefs.frx":9201
+               Caption         =   $"frmPrefs.frx":7901
                Height          =   975
                Index           =   1
                Left            =   855
@@ -1078,7 +1078,7 @@ Begin VB.Form widgetPrefs
             Width           =   1830
          End
          Begin VB.Label lblWindowLevel 
-            Caption         =   $"frmPrefs.frx":92A4
+            Caption         =   $"frmPrefs.frx":79A4
             Height          =   1140
             Index           =   10
             Left            =   2235
@@ -1201,7 +1201,7 @@ Begin VB.Form widgetPrefs
                Width           =   3660
             End
             Begin VB.Label lblGitHub 
-               Caption         =   $"frmPrefs.frx":93BB
+               Caption         =   $"frmPrefs.frx":7ABB
                ForeColor       =   &H8000000D&
                Height          =   915
                Left            =   1560
@@ -1211,7 +1211,7 @@ Begin VB.Form widgetPrefs
                Width           =   4935
             End
             Begin VB.Label lblDebug 
-               Caption         =   $"frmPrefs.frx":9482
+               Caption         =   $"frmPrefs.frx":7B82
                Height          =   930
                Index           =   9
                Left            =   1545
@@ -1258,9 +1258,9 @@ Begin VB.Form widgetPrefs
          End
          Begin VB.ComboBox cmbDebug 
             Height          =   315
-            ItemData        =   "frmPrefs.frx":9526
+            ItemData        =   "frmPrefs.frx":7C26
             Left            =   1530
-            List            =   "frmPrefs.frx":9528
+            List            =   "frmPrefs.frx":7C28
             Style           =   2  'Dropdown List
             TabIndex        =   46
             ToolTipText     =   "Choose to set debug mode."
@@ -1519,7 +1519,7 @@ Begin VB.Form widgetPrefs
             Width           =   2115
          End
          Begin VB.Label lblPosition 
-            Caption         =   $"frmPrefs.frx":952A
+            Caption         =   $"frmPrefs.frx":7C2A
             Height          =   3435
             Index           =   12
             Left            =   5145
@@ -1539,7 +1539,7 @@ Begin VB.Form widgetPrefs
             Width           =   2040
          End
          Begin VB.Label lblPosition 
-            Caption         =   $"frmPrefs.frx":96FC
+            Caption         =   $"frmPrefs.frx":7DFC
             Height          =   705
             Index           =   10
             Left            =   2250
@@ -1559,7 +1559,7 @@ Begin VB.Form widgetPrefs
             Width           =   2355
          End
          Begin VB.Label lblPosition 
-            Caption         =   $"frmPrefs.frx":979B
+            Caption         =   $"frmPrefs.frx":7E9B
             Height          =   3045
             Index           =   6
             Left            =   2265
@@ -1724,7 +1724,7 @@ Begin VB.Form widgetPrefs
             Width           =   2490
          End
          Begin VB.Label lblConfiguration 
-            Caption         =   $"frmPrefs.frx":9937
+            Caption         =   $"frmPrefs.frx":8037
             Height          =   915
             Index           =   0
             Left            =   1980
@@ -3327,7 +3327,7 @@ Private Sub cmbDebug_Click()
 
     btnSave.Enabled = True ' enable the save button
     If cmbDebug.ListIndex = 0 Then
-        txtDefaultEditor.Text = "eg. E:\vb6\TenShillings-RC6-Widget-VB6MkII\TenShillings-RC6-Widget-VB6.vbp"
+        txtDefaultEditor.Text = "eg. E:\vb6\TenShillings-" & gblRichClientEnvironment & "-Widget-VB6MkII\TenShillings-" & gblRichClientEnvironment & "-Widget-VB6.vbp"
         txtDefaultEditor.Enabled = False
         lblDebug(7).Enabled = False
         btnDefaultEditor.Enabled = False
@@ -3898,9 +3898,9 @@ Private Sub btnSave_Click()
      
             
     If gblStartup = "1" Then
-        Call writeRegistry(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "TenShillingsRC6WidgetVB6", """" & App.Path & "\" & "TenShillings-RC6-Widget-VB6.exe""")
+        Call writeRegistry(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "TenShillings" & gblRichClientEnvironment & "Widget" & gblCodingEnvironment, """" & App.Path & "\" & "TenShillings-" & gblRichClientEnvironment & "-Widget-" & gblCodingEnvironment & ".exe""")
     Else
-        Call writeRegistry(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "TenShillingsRC6WidgetVB6", vbNullString)
+        Call writeRegistry(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "TenShillings" & gblRichClientEnvironment & "Widget" & gblCodingEnvironment, vbNullString)
     End If
 
     ' save the values from the general tab
@@ -4252,7 +4252,7 @@ Private Sub adjustPrefsControls(Optional ByVal restartState As Boolean)
         txtDefaultEditor.Text = gblDefaultVB6Editor
     #End If
     
-    lblGitHub.Caption = "You can find the code for the TenShillings Widget on github, visit by double-clicking this link https://github.com/yereverluvinunclebert/TenShillings-RC6-Widget-" & gblCodingEnvironment
+    lblGitHub.Caption = "You can find the code for the TenShillings Widget on github, visit by double-clicking this link https://github.com/yereverluvinunclebert/TenShillings-" & gblRichClientEnvironment & "-Widget-" & gblCodingEnvironment
      
      If Not restartState = True Then
         ' fonts tab
@@ -5233,7 +5233,7 @@ Private Sub optPrefsTooltips_MouseMove(Index As Integer, Button As Integer, Shif
         ElseIf Index = 1 Then
             thisToolTip = "This setting enables the standard Windows-style square tooltips for elements within the Steampunk GUI. These tooltips are single-line and the font size is limited to the Windows font size."
             CreateToolTip optPrefsTooltips(Index).hWnd, thisToolTip, _
-                  TTIconInfo, "Help on  VB6 Native Tooltips on the Preference Utility", , , , True
+                  TTIconInfo, "Help on " & gblCodingEnvironment & " Native Tooltips on the Preference Utility", , , , True
         ElseIf Index = 2 Then
             thisToolTip = "This setting disables the balloon tooltips for elements within the Steampunk GUI."
             CreateToolTip optPrefsTooltips(Index).hWnd, thisToolTip, _
@@ -5526,7 +5526,7 @@ Private Sub lblGitHub_dblClick()
     answerMsg = "This option opens a browser window and take you straight to Github. Proceed?"
     answer = msgBoxA(answerMsg, vbExclamation + vbYesNo, "Proceed to Github? ", True, "lblGitHubDblClick")
     If answer = vbYes Then
-        Call ShellExecute(Me.hWnd, "Open", "https://github.com/yereverluvinunclebert/TenShillings-RC6-Widget-" & gblCodingEnvironment, vbNullString, App.Path, 1)
+        Call ShellExecute(Me.hWnd, "Open", "https://github.com/yereverluvinunclebert/TenShillings-" & gblRichClientEnvironment & "-Widget-" & gblCodingEnvironment, vbNullString, App.Path, 1)
     End If
 
    On Error GoTo 0
@@ -6275,7 +6275,7 @@ Private Sub loadPrefsAboutText()
     lblMinorVersion.Caption = App.Minor
     lblRevisionNum.Caption = App.Revision
     
-    lblAbout(1).Caption = "(32bit WoW64 using " & gblCodingEnvironment & " + RC6)"
+    lblAbout(1).Caption = "(32bit WoW64 using " & gblCodingEnvironment & " + " & gblRichClientEnvironment & ")"
     
     Call LoadFileToTB(txtAboutText, App.Path & "\resources\txt\about.txt", False)
     

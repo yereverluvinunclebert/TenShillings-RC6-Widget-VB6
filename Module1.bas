@@ -463,6 +463,7 @@ Public gblPrefsFormResizedInCode As Boolean
 Public gblTenShillingsWidgetAvailable As Boolean
 
 Public gblCodingEnvironment As String
+Public gblRichClientEnvironment As String
 
 Public widgetPrefsOldHeight As Long
 Public widgetPrefsOldWidth As Long
@@ -1602,7 +1603,7 @@ Public Sub mnuSupport_ClickEvent()
     answer = msgBoxA(answerMsg, vbExclamation + vbYesNo, "Request to Contact Support", True, "mnuSupportClickEvent")
 
     If answer = vbYes Then
-        Call ShellExecute(menuForm.hWnd, "Open", "https://github.com/yereverluvinunclebert/TenShillings-RC6-Widget-" & gblCodingEnvironment & "/issues", vbNullString, App.Path, 1)
+        Call ShellExecute(menuForm.hWnd, "Open", "https://github.com/yereverluvinunclebert/TenShillings-" & gblRichClientEnvironment & "-Widget-" & gblCodingEnvironment & "/issues", vbNullString, App.Path, 1)
     End If
 
    On Error GoTo 0
@@ -2433,12 +2434,12 @@ Public Sub hardRestart()
     
     On Error GoTo hardRestart_Error
 
-    thisCommand = App.Path & "\TenShillings-RC6-Widget-VB6-Restart.exe"
+    thisCommand = App.Path & "\TenShillings-" & gblRichClientEnvironment & "-Widget-Restart.exe"
     
     If fFExists(thisCommand) Then
         
         ' run the helper program that kills the current process and restarts it
-        Call ShellExecute(widgetPrefs.hWnd, "open", thisCommand, "TenShillings-RC6-Widget-VB6.exe prefs", "", 1)
+        Call ShellExecute(widgetPrefs.hWnd, "open", thisCommand, "TenShillings-" & gblRichClientEnvironment & "-Widget-" & gblCodingEnvironment & ".exe prefs", "", 1)
     Else
         'answer = MsgBox(thisCommand & " is missing", vbOKOnly + vbExclamation)
         answerMsg = thisCommand & " is missing"

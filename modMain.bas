@@ -90,7 +90,6 @@ Public Sub mainRoutine(ByVal restart As Boolean)
     ' initialise global vars
     Call initialiseGlobalVars
     
-    ' = "none"
     gblStartupFlg = True
     gblWidgetName = "TenShillings Widget"
     thisPSDFullPath = App.Path & "\Res\TenShillings Widget VB6.psd"
@@ -103,8 +102,9 @@ Public Sub mainRoutine(ByVal restart As Boolean)
     #Else
         gblCodingEnvironment = "VB6"
     #End If
+    gblRichClientEnvironment = "RC6"
         
-    menuForm.mnuAbout.Caption = "About TenShillings Widget Cairo " & gblCodingEnvironment & " widget"
+    menuForm.mnuAbout.Caption = "About TenShillings " & gblRichClientEnvironment & " Cairo " & gblCodingEnvironment & " widget"
        
     ' Load the sounds into numbered buffers ready for playing
     Call loadAsynchSoundFiles
@@ -445,6 +445,7 @@ Private Sub initialiseGlobalVars()
     gblAspectRatio = vbNullString
     gblOldSettingsModificationTime = #1/1/2000 12:00:00 PM#
     gblCodingEnvironment = vbNullString
+    gblRichClientEnvironment = vbNullString
 
     'gblTimeAreaClicked = vbNullString
     
@@ -946,7 +947,7 @@ Private Sub getToolSettingsFile()
     
     Dim iFileNo As Integer: iFileNo = 0
     
-    gblSettingsDir = fSpecialFolder(feUserAppData) & "\TenShillings-RC6-Widget-VB6" ' just for this user alone
+    gblSettingsDir = fSpecialFolder(feUserAppData) & "\TenShillings-" & gblRichClientEnvironment & "-Widget-" & gblCodingEnvironment & "" ' just for this user alone
     gblSettingsFile = gblSettingsDir & "\settings.ini"
         
     'if the folder does not exist then create the folder
