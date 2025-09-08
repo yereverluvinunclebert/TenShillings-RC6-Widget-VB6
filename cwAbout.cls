@@ -388,29 +388,14 @@ Private Sub Draw(ByRef CC As cCairoContext, ByVal dx As Single, ByVal dy As Sing
     W.FontName = gblWidgetFont
     W.ForeColor = vbBlack
     W.FontBold = True
-    W.FontSize = 11
+    W.FontSize = 9
 
     W.SelectFontSettingsInto CC
     
     If gblDpiAwareness = "0" Then
-        CC.DrawText 350, -20, dx, dy - 275, gblRichClientEnvironment & " " & "version " & App.Major & "." & App.Minor & "." & App.Revision & " beta", , , 2, True, , mMyOpacity
-         
-        #If TWINBASIC Then
-            CC.DrawText 360, -20, dx, dy, "TwinBasic", , , 2, True, , mMyOpacity
-        #Else
-            CC.DrawText 315, -20, dx, dy - 275, "VB6", , , 2, True, , mMyOpacity
-        #End If
-        
+        CC.DrawText 340, -20, dx, dy - 275, gblRichClientEnvironment & " " & "version " & App.Major & "." & App.Minor & "." & App.Revision & " beta", , , 2, True, , mMyOpacity
    Else
-        
-        CC.DrawText 350, 0, dx, dy - 1050, gblRichClientEnvironment & " " & "version " & App.Major & "." & App.Minor & "." & App.Revision & " beta", , , 2, True, , mMyOpacity
-        
-        #If TWINBASIC Then
-            CC.DrawText 360, 0, dx, dy, "TwinBasic", , , 2, True, , mMyOpacity
-        #Else
-            CC.DrawText 315, 0, dx, dy - 1050, "VB6", , , 2, True, , mMyOpacity
-        #End If
-
+        CC.DrawText 340, 0, dx, dy - 1050, gblRichClientEnvironment & " " & "version " & App.Major & "." & App.Minor & "." & App.Revision & " beta", , , 2, True, , mMyOpacity
     End If
     W.Refresh
 

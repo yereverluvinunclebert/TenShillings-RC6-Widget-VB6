@@ -48,8 +48,6 @@ Public TenShillingsWidget As cwTenShillings
 ' any other private vars
 Public gblWidgetName As String
 
-
-
 '---------------------------------------------------------------------------------------
 ' Procedure : Main
 ' Author    : beededea
@@ -110,7 +108,7 @@ Public Sub mainRoutine(ByVal restart As Boolean)
     ElseIf fFExists(App.Path & "\BIN\RC6.dll") Then
         gblRichClientEnvironment = "RC6"
     End If
-        
+      
     menuForm.mnuAbout.Caption = "About TenShillings " & gblRichClientEnvironment & " Cairo " & gblCodingEnvironment & " widget"
        
     ' Load the sounds into numbered buffers ready for playing
@@ -143,8 +141,8 @@ Public Sub mainRoutine(ByVal restart As Boolean)
     ' initialise and create the three main RC forms (widget, about and licence) on the current display
     Call createRCFormsOnCurrentDisplay
     
-    ' Set the opacity of the widget, passing just this one global variable to a public property within the class
-    'TenShillingsWidget.opacity = gblOpacity
+'    ' Set the opacity of the widget, passing just this one global variable to a public property within the class
+    TenShillingsWidget.opacity = Val(gblOpacity) / 100
     
     ' place the form at the saved location and configure all the form elements
     Call makeVisibleFormElements
@@ -344,6 +342,7 @@ Private Sub initialiseGlobalVars()
     gblDpiAwareness = vbNullString
     
     gblWidgetSize = vbNullString
+    gblSkewDegrees = vbNullString
     gblScrollWheelDirection = vbNullString
 '    gblNumericDisplayRotation = vbNullString
     
@@ -474,7 +473,6 @@ End Sub
 '---------------------------------------------------------------------------------------
 '
 Private Sub addImagesToImageList()
-    'Dim useloop As Integer: useloop = 0
     
     On Error GoTo addImagesToImageList_Error
 
@@ -563,6 +561,8 @@ Public Sub adjustMainControls(Optional ByVal licenceState As Integer)
         End If
     End If
     
+    TenShillingsWidget.SkewDegrees = CDbl(gblSkewDegrees)
+    
     ' set the initial size
     If gblMonitorCount > 1 And (LTrim$(gblMultiMonitorResize) = "1" Or LTrim$(gblMultiMonitorResize) = "2") Then
         If widgetMonitorStruct.IsPrimary = True Then
@@ -634,7 +634,7 @@ Public Sub adjustMainControls(Optional ByVal licenceState As Integer)
         TenShillingsWidget.Locked = True ' this is just here for continuity's sake, it is also set at the time the control is selected
     End If
     
-    TenShillingsWidget.opacity = Val(gblOpacity)
+    TenShillingsWidget.opacity = Val(gblOpacity) / 100
 
     ' set the z-ordering of the window
     Call setAlphaFormZordering
@@ -713,6 +713,8 @@ Public Sub readSettingsFile(ByVal Location As String, ByVal gblSettingsFile As S
         gblShowHelp = fGetINISetting(Location, "showHelp", gblSettingsFile)
         gblDpiAwareness = fGetINISetting(Location, "dpiAwareness", gblSettingsFile)
         gblWidgetSize = fGetINISetting(Location, "widgetSize", gblSettingsFile)
+        gblSkewDegrees = fGetINISetting(Location, "skewDegrees", gblSettingsFile)
+        
         gblScrollWheelDirection = fGetINISetting(Location, "scrollWheelDirection", gblSettingsFile)
         
         ' position
@@ -827,6 +829,8 @@ Public Sub validateInputs()
 '
         If gblDpiAwareness = vbNullString Then gblDpiAwareness = "0"
         If gblWidgetSize = vbNullString Then gblWidgetSize = "100"
+        If gblSkewDegrees = vbNullString Then gblSkewDegrees = "0"
+        
         If gblScrollWheelDirection = vbNullString Then gblScrollWheelDirection = "1"
 '        If gblNumericDisplayRotation = vbNullString Then gblNumericDisplayRotation = "1"
                
@@ -1057,7 +1061,7 @@ Private Sub createRCFormsOnCurrentDisplay()
     On Error GoTo createRCFormsOnCurrentDisplay_Error
 
     With New_c.Displays(1) 'get the current Display
-      Call fMain.initAndCreateTenShillingsForm(.WorkLeft, .WorkTop, 3000, 3000, gblWidgetName)
+      Call fMain.initAndCreateTenShillingsForm(.WorkLeft, .WorkTop, 2200, 2200, gblWidgetName)
     End With
 
     With New_c.Displays(1) 'get the current Display
