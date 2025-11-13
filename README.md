@@ -123,6 +123,7 @@ not registered correctly then the relevant controls will be replaced by picture 
 The above is only for development, for ordinary users, during runtime there is no need to do the above. The OCX will reside in the program folder. The program reference to this OCX is contained within the supplied resource file, Panzer CPU Gauge.RES. The reference to this file is already compiled into the binary. As long as the OCX is in the same folder as the binary the program will run without the need to register the OCX manually.
 
  <img width="451" height="406" alt="components" src="https://github.com/user-attachments/assets/0dad6c34-439c-4fbd-8522-23036269a89e" />
+ 
  Project References Window showing the ccrSlider OCX selected 
  
  
