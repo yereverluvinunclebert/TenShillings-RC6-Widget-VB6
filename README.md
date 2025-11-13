@@ -96,9 +96,9 @@ BUILD: The program runs without any Microsoft plugins.
  
 ![prefsGeneral](https://github.com/user-attachments/assets/8a228ec6-89a9-459a-98bd-d1d17ce9728d)
 
- Requires a PzCPU Gauge folder in C:\Users\<user>\AppData\Roaming\ 
- eg: C:\Users\<user>\AppData\Roaming\PzCPU Gauge
- Requires a settings.ini file to exist in C:\Users\<user>\AppData\Roaming\PzCPU Gauge
+ Requires a TenShillings-RC6-Widget-VB6 folder in C:\Users\<user>\AppData\Roaming\ 
+ eg: C:\Users\<user>\AppData\Roaming\TenShillings-RC6-Widget-VB6
+ Requires a settings.ini file to exist in C:\Users\<user>\AppData\Roaming\TenShillings-RC6-Widget-VB6
  The above will be created automatically by the compiled program when run for the 
  first time.
  
@@ -120,7 +120,7 @@ This will allow the custom controls to be accessible to the VB6 IDE
 at design time and the sliders will function as intended (if this ocx is
 not registered correctly then the relevant controls will be replaced by picture boxes).
 
-The above is only for development, for ordinary users, during runtime there is no need to do the above. The OCX will reside in the program folder. The program reference to this OCX is contained within the supplied resource file, Panzer CPU Gauge.RES. The reference to this file is already compiled into the binary. As long as the OCX is in the same folder as the binary the program will run without the need to register the OCX manually.
+The above is only for development, for ordinary users, during runtime there is no need to do the above. The OCX will reside in the program folder. The program reference to this OCX is contained within the supplied resource file, TenShillings-RC6-Widget-VB6.RES. The reference to this file is already compiled into the binary. As long as the OCX is in the same folder as the binary the program will run without the need to register the OCX manually.
 
  <img width="451" height="406" alt="components" src="https://github.com/user-attachments/assets/0dad6c34-439c-4fbd-8522-23036269a89e" />
  
@@ -147,7 +147,7 @@ The above is only for development, for ordinary users, during runtime there is n
  * SETUP.EXE - The program is currently distributed using setup2go, a very useful 
  and comprehensive installer program that builds a .exe installer. Youll have to 
  find a copy of setup2go on the web as it is now abandonware. Contact me
- directly for a copy. The file "install PzCPU Gauge 0.1.0.s2g" is the configuration 
+ directly for a copy. The file "Diesel-Volume-Control-VB6-installer.s2g" is the configuration 
  file for setup2go. When you build it will report any errors in the build.
  
  * HELP.CHM - the program documentation is built using the NVU HTML editor and 
